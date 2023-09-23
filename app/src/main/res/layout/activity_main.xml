@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#151620"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/Heading"
+        android:layout_width="match_parent"
+        android:textColor="@color/white"
+        android:layout_height="40dp"
+        android:text="@string/heading"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        >
+        <FrameLayout
+            android:layout_width="200dp"
+            android:layout_height="200dp">
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="180dp"
+            android:src="@drawable/male" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                android:background="@android:color/transparent"
+                android:text="@string/male_btn"
+                android:textColor="#FFFFFF" />
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="200dp"
+            android:layout_height="200dp">
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="180dp"
+                android:src="@drawable/female"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                android:background="@android:color/transparent"
+                android:text="@string/female_btn"
+                android:textColor="#FFFFFF" />
+
+        </FrameLayout>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="@string/weight_tag"
+        android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:ems="10"
+            android:hint="@string/hint_weight"
+            android:inputType="number"
+            android:textAlignment="center" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/white"
+            android:text="@string/height_tag"
+            android:textSize="18sp" />
+
+        <EditText
+        android:id="@+id/editHeight"
+            android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            android:textColor="@color/white"
+        android:textAlignment="center"
+            android:textColorHint="@color/white"
+
+        android:ems="10"
+        android:hint="@string/hint_height"
+        android:inputType="number"
+        />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/inches_tag"
+            android:textSize="18sp" />
+
+
+    <EditText
+        android:id="@+id/editInches"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textColorHint="@color/white"
+
+        android:ems="10"
+        android:hint="@string/hint_inches"
+        android:inputType="number" />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+    <TextView
+        android:id="@+id/result_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/result_btn"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:background="#CF7356"
+        android:gravity="center"/>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/calcuateButton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#5DCF5D"
+        android:text="@string/text_button"
+        android:textSize="20sp" />
+
+
+</LinearLayout>
